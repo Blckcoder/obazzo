@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent"
+    tools:context=".activity.ZoomImageViewActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
+
+    <!-- <com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager
+         android:id="@+id/rv_image"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@+id/toolbar" />-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:minHeight="@dimen/_220sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        android:visibility="gone"
+        app:cardElevation="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:cardPreventCornerOverlap="true"
+
+        android:layout_marginBottom="@dimen/_90sdp"
+        app:cardUseCompatPadding="true">
+
+        <com.jsibbold.zoomage.ZoomageView
+            android:id="@+id/iv_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_maxScale="8"
+            app:zoomage_minScale="0.6"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_translatable="true"
+            app:zoomage_zoomable="true" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager
+        android:id="@+id/rv_photo_slide"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginBottom="@dimen/_10sdp" />
+</RelativeLayout>

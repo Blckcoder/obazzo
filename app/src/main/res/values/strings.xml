@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Obaazo</string>
+    <string name="facebook_app_id">2228195340725450</string>
+    <string name="fb_login_protocol_scheme">fb2228195340725450</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="top_sheet_behavior" translatable="false">com.ansh.obaazo.widget.topSheet.TopSheetBehavior</string>
+    <string name="permission_rationale" />
+    <string name="permission_denied_explanation">dfafa</string>
+    <string name="settings">safafa</string>
+    <string name="photos_lt_amenities">Photos &amp; Amenities</string>
+
+
+    <string-array name="time">
+        <item>Expected Checkin Time</item>
+        <item>12:00 pm To 2:00 Pm</item>
+        <item>02:00 pm To 5:00 Pm</item>
+        <item>05:00 pm To 08:00 Pm</item>
+    </string-array>
+</resources>
